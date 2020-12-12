@@ -1,0 +1,6 @@
+rootProject.name = 'msa-transaction'
+
+include 'bank'
+include 'payment'
+include 'consumer'
+include 'module:client:bank'

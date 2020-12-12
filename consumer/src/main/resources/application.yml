@@ -1,0 +1,12 @@
+server.port: 8084
+spring:
+  application.name: consumer
+  kafka:
+    consumer:
+      auto-offset-reset: latest
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/payment
+    username: root
+    password: root
+
+logging.level.org.springframework.r2dbc: debug

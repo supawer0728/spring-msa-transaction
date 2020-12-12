@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/${spring.application.name}
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+---
+spring:
+  application.name: kookmin-bank
+  config:
+    activate:
+      on-profile: kb
+
+server.port: 8081
+---
+spring:
+  application.name: shinhan-bank
+  config:
+    activate:
+      on-profile: shinhan
+
+server.port: 8082
+---
+spring:
+  application.name: nonghyup-bank
+  config:
+    activate:
+      on-profile: nonghyup
+
+server.port: 8083
